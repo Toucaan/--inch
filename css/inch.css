@@ -1,6 +1,3 @@
-/* Dots per CSS inch. *
- * 17" Retina MBP/Chrome values */
-
 @media (resolution: 96dpi) and (device-width: 1280px) {
     :root {
         --inch: 116px;
@@ -10,7 +7,10 @@
     }
 }
 
-@media (resolution: 192dpi) and (-webkit-device-pixel-ratio: 2) {
+
+/* 17" Retina MBP/Chrome values */
+
+@media (resolution: 192dpi) and (device-width: 2880px) {
     :root {
         --inch: 130px;
     }
