@@ -1,36 +1,38 @@
 *,
 *:after,
 *:before {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-html, body {
-	height: 100vh;
-	width: 100vw;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: white;
+html,
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
 }
 
 .flex {
-	display: -webkit-box;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+    display: -webkit-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .standards {
-	width: 1in; /* Web standards has an inch unit, but not really.  */
-	height: 1in;
-	background: orange;
-	margin:auto 1vmin;
+    width: 1in;
+    /* Web standards has an inch unit, but not really.  */
+    height: 1in;
+    background: orange;
+    margin: auto 1vmin;
 }
 
 .square {
-	width: var(--inch);
-	height: var(--inch);
-	/* background: orangered; */
+    width: var(--inch);
+    height: var(--inch);
+    background: orangered;
 }

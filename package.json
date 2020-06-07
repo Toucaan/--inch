@@ -1,12 +1,16 @@
 {
-  "name": "inch",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "Marvin Danig <marvin@marvindanig.com> (http://marvindanig.com)",
-  "license": "MIT"
+    "name": "inch",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "browser-sync start --server --files 'css/*.css'",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "Marvin Danig <marvin@marvindanig.com> (http://marvindanig.com)",
+    "license": "MIT",
+    "dependencies": {
+        "browser-sync": "^2.26.7"
+    }
 }
