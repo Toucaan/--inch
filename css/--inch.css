@@ -16,6 +16,15 @@
 }
 
 
+/* 27" EIZO monitor (2560 x 1440)*/
+
+@media (resolution: 115dpi) and (device-width: 2560px) {
+    :root {
+        --inch: 92px;
+    }
+}
+
+
 /* Windows 10 @100% (1366 x 768) landscape*/
 
 @media (resolution: 96dpi) and (device-width: 1366px) {
@@ -78,5 +87,17 @@
 @media only screen and (device-width: 834px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape) {
     :root {
         --inch: 118px;
+    }
+}
+
+
+/* ----------- Apple Watch 5 (Women) ----------- */
+
+@media only screen and (max-device-width: 42mm) and (-webkit-min-device-pixel-ratio: 3) {
+    :root {
+        --inch: 158px;
+    }
+    .square {
+        background-color: pink;
     }
 }
