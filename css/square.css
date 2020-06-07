@@ -35,5 +35,5 @@ body {
 .square {
     width: var(--inch);
     height: var(--inch);
-    /*background: orangered;*/
+    background: orangered;
 }

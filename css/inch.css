@@ -18,3 +18,15 @@
         background-color: rebeccapurple;
     }
 }
+
+
+/* 6.5" iPhone Pro Max */
+
+@media (resolution: 458dpi) and (-webkit-min-device-pixel-ratio: 4) {
+    :root {
+        --inch: 370px;
+    }
+    .square {
+        background-color: blue;
+    }
+}
