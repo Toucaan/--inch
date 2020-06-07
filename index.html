@@ -1,36 +1,29 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<title>Example3: Mapping pixels to inch. </title>
-	<meta name="description" content="Toucaan HTML5 Chassis">
-	<meta name="author" content="Marvin Danig">
-
-	<style>
-		/* Only critical CSS below: */
-		@charset "UTF-8";
-
-		/* Import --inch variable into global namespace. */
-		@import url('./css/inch.css') only screen;
-
-		/* @import url('./css/screen.css') only screen;  */
-
-		@import url('./css/square.css') only screen;
-
-	</style>
+    <meta charset="utf-8">
+    <title>Example3: Mapping pixels to inch. </title>
+    <meta name="description" content="Toucaan HTML5 Chassis">
+    <meta name="author" content="Marvin Danig">
+    <style>
+    /* Only critical CSS below: */
+    
+    @charset "UTF-8";
+    /* Import --inch variable into global namespace. */
+    
+    @import url('./css/inch.css') only screen;
+    /* @import url('./css/screen.css') only screen;  */
+    
+    @import url('./css/square.css') only screen;
+    </style>
 </head>
 
-<body class="flex">
-
-
-	<div class="square flex">physical measure.</div>
-
-	<div class="standards flex">web standards</div>
-
-
-
+<body>
+    <div class="box flex">
+        <div class="square flex">physical measure.</div>
+        <div class="standards flex">web standards</div>
+    </div>
 </body>
 
 </html>
