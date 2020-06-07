@@ -1,32 +1,70 @@
-@media (resolution: 96dpi) and (device-width: 1280px) {
-    :root {
-        --inch: 116px;
-    }
-    .square {
-        background-color: cornflowerblue;
-    }
-}
-
-
 /* 17" Retina MBP/Chrome values */
 
 @media (resolution: 192dpi) and (device-width: 2880px) {
     :root {
         --inch: 130px;
     }
+}
+
+
+/* 13.3-inch (1280 x 800) */
+
+@media (resolution: 96dpi) and (device-width: 1280px) {
+    :root {
+        --inch: 116px;
+    }
     .square {
-        background-color: rebeccapurple;
+        background-color: pink;
     }
 }
 
 
-/* 6.5" iPhone Pro Max */
+/* Windows 10 @100% (1366 x 768) landscape*/
 
-@media (resolution: 458dpi) and (-webkit-min-device-pixel-ratio: 4) {
+@media (resolution: 96dpi) and (device-width: 1366px) {
     :root {
-        --inch: 370px;
+        --inch: 114px;
     }
     .square {
         background-color: blue;
+    }
+}
+
+
+/* Windows 10 Pro @100% (1920 x 1080px) landscape. */
+
+@media (resolution: 96dpi) and (device-width: 1920px) {
+    :root {
+        --inch: 144px;
+    }
+    .square {
+        background-color: orange;
+    }
+}
+
+
+/* Windows 10 Pro @125% (1920 x 1080px) landscape. */
+
+@media (resolution: 120dpi) and (device-width: 1536px) {
+    :root {
+        --inch: 115px;
+    }
+    .square {
+        background-color: orangered;
+    }
+}
+
+
+/* ----------- iPhone 11 Pro Max ----------- */
+
+@media only screen and (device-width: 414px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+    :root {
+        --inch: 370px;
+    }
+}
+
+@media only screen and (device-width: 414px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+    :root {
+        --inch: 189px;
     }
 }
