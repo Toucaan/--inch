@@ -1,20 +1,17 @@
-/* 17" Retina MBP/Chrome values */
+/* Test for size of a pixel banks on distribution of pixels along physical dimensions. 
+   For this reason we use precise device-width or device-height depending on orientation
+   even though `device-*` MQ has been deprecated by the w3c. 
 
-@media (resolution: 192dpi) and (device-width: 2880px) {
-    :root {
-        --inch: 130px;
-    }
-}
+   Vendor support for device-* is currently at 100% and will continue to be supported
+   even in future editions of major browsers simply because it is an important CSS property
+   with 100% coverage. */
 
 
-/* 13.3-inch (1280 x 800) */
+/* 13.3-inch MBP (1280 x 800) */
 
 @media (resolution: 96dpi) and (device-width: 1280px) {
     :root {
         --inch: 116px;
-    }
-    .square {
-        background-color: pink;
     }
 }
 
@@ -25,9 +22,6 @@
     :root {
         --inch: 114px;
     }
-    .square {
-        background-color: blue;
-    }
 }
 
 
@@ -36,9 +30,6 @@
 @media (resolution: 96dpi) and (device-width: 1920px) {
     :root {
         --inch: 144px;
-    }
-    .square {
-        background-color: orange;
     }
 }
 
@@ -49,8 +40,14 @@
     :root {
         --inch: 115px;
     }
-    .square {
-        background-color: orangered;
+}
+
+
+/* 17" Retina MBP/Chrome values */
+
+@media (resolution: 192dpi) and (device-width: 2880px) {
+    :root {
+        --inch: 130px;
     }
 }
 
@@ -63,8 +60,23 @@
     }
 }
 
-@media only screen and (device-width: 414px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+@media only screen and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
     :root {
         --inch: 189px;
+    }
+}
+
+
+/* ----------- iPad Pro 10.5 ----------- */
+
+@media only screen and (device-width: 834px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
+    :root {
+        --inch: 158px;
+    }
+}
+
+@media only screen and (device-width: 834px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape) {
+    :root {
+        --inch: 118px;
     }
 }
