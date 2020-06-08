@@ -52,26 +52,22 @@ like so:
   }
 }
 
-/* 	and so on… */
+/* …and so on. */
 
 ```
-Scale your UX/UI along portrait orientation from the tiniest viewport
-on the planet to the largest screen there is mounted vertically.
 
-Follow the same rules to scale your UI orthogonally along landscape
-orientation from the tiniest screens to the largest projectors and TVs.
+Scale your UX/UI along the _portrait_ orientation from the tiniest viewport
+on the planet (Apple Watch) to the largest screen (mounted vertically) there is.
+Apply the same rules to scale the UI orthogonally along landscape
+orientation from the tiniest screen to the largest TVs and projectors on the web.
 
-Read more about scaling UI and baseline resets on Toucaan [documentation](https://www.toucaan.com/docs/introduction).
+Read more about Intrinsic Web Design and Baseline RResets on Toucaan [documentation](https://www.toucaan.com/docs/introduction).
 
-
-### 2. Using `--inch` with Bootstrap, Bulma, Tailwind or other responsive CSS frameworks:
-
-
+### 2. Using `--inch` with Bootstrap, Bulma, Tailwind:
 
 ### 3. Using `--inch` with generic CSS:
 
-
-### References:
+### References
 
 1. https://caniuse.com/#feat=css-media-resolution
 
