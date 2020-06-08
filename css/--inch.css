@@ -1,103 +1,112 @@
-/* Test for size of a pixel banks on distribution of pixels along physical dimensions. 
-   For this reason we use precise device-width or device-height depending on orientation
-   even though `device-*` MQ has been deprecated by the w3c. 
+/* 	Test for the size of a pixel depends on the distribution of points (pixel count)
+		along the physical size (i.e. spread area of points) of the glass.
+		For the measure of area we are using precise `device-width` or `device-height`
+		even though the CSS property has been deprecated by the w3c.
 
-   Vendor support for device-* is currently at 100% and will continue to be supported
-   even in future editions of major browsers simply because it is an important CSS property
-   with 100% coverage. */
+		100% vendors support `device-width` and `device-height` at the moment and the
+		property will continue to be supported well into the future simply because it
+		it is the only way to target/match device specifically using the natural resolve
+		of the hardware.
 
+		https://caniuse.com/#search=device-width
 
-/* 13.3-inch MBP (1280 x 800) */
+		There are probably other ways of achieving the above result using min()/max()
+		properties but those would be empirical in nature. */
 
+/* 	The mappings have been categorized into five zones: */
+
+/****************/
+/* DESKTOP ZONE */
+/****************/
+
+/* 13.3-inch MBP (2012) (1280 x 800) */
 @media (resolution: 96dpi) and (device-width: 1280px) {
-    :root {
-        --inch: 116px;
-    }
+	:root {
+		--inch: 116px;
+	}
 }
-
-
-/* 27" EIZO monitor (2560 x 1440)*/
-
-@media (resolution: 115dpi) and (device-width: 2560px) {
-    :root {
-        --inch: 92px;
-    }
-}
-
-
-/* Windows 10 @100% (1366 x 768) landscape*/
-
-@media (resolution: 96dpi) and (device-width: 1366px) {
-    :root {
-        --inch: 114px;
-    }
-}
-
-
-/* Windows 10 Pro @100% (1920 x 1080px) landscape. */
-
-@media (resolution: 96dpi) and (device-width: 1920px) {
-    :root {
-        --inch: 144px;
-    }
-}
-
-
-/* Windows 10 Pro @125% (1920 x 1080px) landscape. */
-
-@media (resolution: 120dpi) and (device-width: 1536px) {
-    :root {
-        --inch: 115px;
-    }
-}
-
 
 /* 17" Retina MBP/Chrome values */
-
-@media (resolution: 192dpi) and (device-width: 2880px) {
-    :root {
-        --inch: 130px;
-    }
+@media (resolution: 192dpi) and (device-width: 1680px) {
+	:root {
+		--inch: 130px;
+	}
 }
 
+/* Windows 10 @100% (1366 x 768) landscape*/
+@media (resolution: 96dpi) and (device-width: 1366px) {
+	:root {
+		--inch: 114px;
+	}
+}
 
-/* ----------- iPhone 11 Pro Max ----------- */
+/* Windows 10 Pro @100% (1920 x 1080px) landscape. */
+@media (resolution: 96dpi) and (device-width: 1920px) {
+	:root {
+		--inch: 144px;
+	}
+}
+
+/* Windows 10 Pro @125% (1920 x 1080px) landscape. */
+@media (resolution: 120dpi) and (device-width: 1536px) {
+	:root {
+		--inch: 115px;
+	}
+}
+
+/* 27" EIZO monitor (2560 x 1440)*/
+@media (resolution: 115dpi) and (device-width: 2560px) {
+	:root {
+		--inch: 92px;
+	}
+}
+
+/****************/
+/* MOBILE ZONE */
+/****************/
+
+/* iPhone 11 Pro Max */
 
 @media only screen and (device-width: 414px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
-    :root {
-        --inch: 370px;
-    }
+	:root {
+		--inch: 370px;
+	}
 }
 
 @media only screen and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
-    :root {
-        --inch: 189px;
-    }
+	:root {
+		--inch: 189px;
+	}
 }
 
+/****************/
+/* TABLET ZONE  */
+/****************/
 
 /* ----------- iPad Pro 10.5 ----------- */
-
 @media only screen and (device-width: 834px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
-    :root {
-        --inch: 158px;
-    }
+	:root {
+		--inch: 158px;
+	}
 }
 
 @media only screen and (device-width: 834px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape) {
-    :root {
-        --inch: 118px;
-    }
+	:root {
+		--inch: 118px;
+	}
 }
+
+/*******************/
+/* SMARTWATCH ZONE */
+/*******************/
 
 
 /* ----------- Apple Watch 5 (Women) ----------- */
-
 @media only screen and (max-device-width: 42mm) and (-webkit-min-device-pixel-ratio: 3) {
-    :root {
-        --inch: 158px;
-    }
-    .square {
-        background-color: pink;
-    }
+	:root {
+		--inch: 158px;
+	}
+	.square {
+		background-color: pink;
+	}
 }
