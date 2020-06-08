@@ -26,11 +26,13 @@ at the top of your critical css like so:
     /* Other CSS variables are specified here… */
 
   }
-  /* See more on Toucaan's [documentation](https://www.toucaan.com/docs/introduction) on baseline resets.*/
 ```
 
 Now you can use `--inch` on your stylesheet along the `portrait` or `landscape` axis
 like a champion!
+
+Read more about scaling UI and baseline resets on Toucaan's [documentation](https://www.toucaan.com/docs/introduction).*/
+
 
 ```css
 /* Portrait CSS */
@@ -54,11 +56,11 @@ like a champion!
 
 /* 	and so on… */
 
-/*	Scale your UX/UI along portrait orientation from the tiniest viewport
-		on the planet to the largest screen there is mounted vertically.
+Scale your UX/UI along portrait orientation from the tiniest viewport
+on the planet to the largest screen there is mounted vertically.
 
-		Follow the same rules to scale your UI orthogonally along landscape
-		orientation from the tiniest screens to the largest projectors and TVs. */
+Follow the same rules to scale your UI orthogonally along landscape
+orientation from the tiniest screens to the largest projectors and TVs.
 
 
 
