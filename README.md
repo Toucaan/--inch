@@ -88,7 +88,7 @@ The `--inch` polyfill is also ideal if you are not using any style framework at 
 support and scale along new devices like the Apple Watch or a hi-res OLED TV.
 Works great if you're willing to build your designs ground up using vanilla css.
 
-> <link rel="stylesheet" href="path/to/css/--inch.css">
+> @import url('path/to/--inch.css') only screen;
 
 ### References
 
