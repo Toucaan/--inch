@@ -70,7 +70,18 @@ Read more about scaling UI and baseline resets on Toucaan [documentation](https:
 
 ### 3. Using `--inch` with generic CSS:
 
-## How does it work
 
-## Contributing
+### References:
+
+1. https://caniuse.com/#feat=css-media-resolution
+
+2. https://caniuse.com/#search=device-width
+
+3. https://sebastien-gabriel.com/designers-guide-to-dpi/
+
+4. https://www.w3.org/Style/Examples/007/units.en.html
+
+5. https://bubblin.io/blog/web-design-recommendations-for-the-apple-watch
+
+
 
