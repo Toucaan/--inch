@@ -29,11 +29,8 @@ at the top of your critical css like so:
   }
 ```
 
-Now you can use `--inch` on your stylesheet along the `portrait` or `landscape` axis
-like a champion!
-
-Read more about scaling UI and baseline resets on Toucaan [documentation](https://www.toucaan.com/docs/introduction).
-
+Now you can use the `--inch` variable on your stylesheets along the `portrait` or `landscape` axis
+like so:
 
 ```css
 /* Portrait CSS */
@@ -57,15 +54,15 @@ Read more about scaling UI and baseline resets on Toucaan [documentation](https:
 
 /* 	and so on… */
 
+```
 Scale your UX/UI along portrait orientation from the tiniest viewport
 on the planet to the largest screen there is mounted vertically.
 
 Follow the same rules to scale your UI orthogonally along landscape
 orientation from the tiniest screens to the largest projectors and TVs.
 
+Read more about scaling UI and baseline resets on Toucaan [documentation](https://www.toucaan.com/docs/introduction).
 
-
-```
 
 ### 2. Using `--inch` with Bootstrap, Bulma, Tailwind or other responsive CSS frameworks:
 
