@@ -5,6 +5,10 @@ A global `--inch` polyfill using CSS variables.
 This file includes pin-pointed pixels:`--inch` mappings for commonly available hardware
 according to their resolutionary `dpi` and `device-size`.
 
+Full discussion about the basis and purpose of this polyfill is available here:
+
+[https://bubblin.io/blog/inch](https://bubblin.io/blog/inch)
+
 ## Usage
 
 ### 1. Using `--inch` with Toucaan CSS Framework
