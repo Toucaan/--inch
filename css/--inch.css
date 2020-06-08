@@ -13,9 +13,7 @@
     There are probably other ways of achieving the above result using min()/max()
 		properties but those would be empirical in nature. */
 
-/*********************/
-/**		CatchAll()	 	**/
-/*********************/
+
 
 /* 	The mappings have been categorized into five zones: */
 
@@ -71,13 +69,13 @@
 
 /* iPhone 11 Pro Max */
 
-@media only screen and (device-width: 414px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+@media (device-width: 414px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
   :root {
     --inch: 370px;
   }
 }
 
-@media only screen and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+@media (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
   :root {
     --inch: 189px;
   }
@@ -88,13 +86,13 @@
 /****************/
 
 /* ----------- iPad Pro 10.5 ----------- */
-@media only screen and (device-width: 834px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
+@media  (device-width: 834px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
   :root {
     --inch: 158px;
   }
 }
 
-@media only screen and (device-width: 834px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape) {
+@media (device-width: 834px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape) {
   :root {
     --inch: 118px;
   }
@@ -105,7 +103,7 @@
 /*******************/
 
 /* Apple Watch 5 (Women) 40mm. */
-@media only screen and (min-device-width: 324px) and (min-device-height: 394px) and (-webkit-device-pixel-ratio: 3) {
+@media (min-device-width: 324px) and (min-device-height: 394px) and (-webkit-device-pixel-ratio: 3) {
   :root {
     --inch: 370px;
   }
@@ -115,7 +113,7 @@
 }
 
 /* Apple Watch 5 (Men) 44mm. */
-@media only screen and (min-device-width: 368px) and (min-device-height: 448px) and (-webkit-device-pixel-ratio: 3) {
+@media  (min-device-width: 368px) and (min-device-height: 448px) and (-webkit-device-pixel-ratio: 3) {
   :root {
 		--inch: 370px;
   }
@@ -133,6 +131,14 @@
 
 /*********************/
 /* PROJECTOR/TV ZONE */
+/*********************/
+
+
+
+
+
+/*********************/
+/**		CatchAll()	 	**/
 /*********************/
 
 

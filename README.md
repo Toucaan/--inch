@@ -34,19 +34,19 @@ like so:
 
 ```css
 /* Portrait CSS */
-@media only screen and (max-width: calc(2 * var(--inch)) {
+@media (max-width: calc(2 * var(--inch)) {
   body{
     /*  Style for smartwatches or a very tiny mobile screen go here. */
   }
 }
 
-@media only screen and (min-width: calc(2.000000000001 * var(--inch)) and (max-width: calc(4 * var(--inch))) {
+@media (min-width: calc(2.000000000001 * var(--inch)) and (max-width: calc(4 * var(--inch))) {
   body{
     /* Smartphones and phablets in portrait mode.*/
   }
 }
 
-@media only screen and (min-width: calc(4.000000000001 * var(--inch))) and (max-width: calc(8 * var(--inch))) {
+@media (min-width: calc(4.000000000001 * var(--inch))) and (max-width: calc(8 * var(--inch))) {
   body{
     /* Tablets and larger menu surfaces in portrait mode.*/
   }
