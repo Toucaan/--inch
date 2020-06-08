@@ -15,7 +15,7 @@ If you're using the [Toucaan Mutative framework](https://toucaan.com), simply im
 at the top of your critical css like so:
 
 ```css
-  /* Include `--inch` variable into the :root of document using inch polyfill. */
+  /* Include `--inch` variable into the :root of the document using polyfill. */
   @import url('path/to/--inch.css') only screen;
 
   /* Portrait ⇋ landscape switch. */
@@ -23,15 +23,10 @@ at the top of your critical css like so:
   @import url('/dist/landscape.css') only screen and (orientation: landscape);
 
   :root {
-    /* Font familia: */
-    --sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --system: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, Fira Sans, sans-serif!important;
-    --monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-
-    /* App specific variables are specified below this line… */
+    /* Other CSS variables are specified here… */
 
   }
-  /* …and so on.*/
+  /* See more on Toucaan's [documentation](https://www.toucaan.com/docs/introduction) on baseline resets.*/
 ```
 
 Now you can use `--inch` on your stylesheet along the `portrait` or `landscape` axis
@@ -41,13 +36,7 @@ like a champion!
 /* Portrait CSS */
 @media only screen and (max-width: calc(2 * var(--inch)) {
   body{
-    /*  All the style for a smartwatch or a very tiny mobile screen
-        go in here. We don't use pixels for an Apple Watch because
-        its viewport is just too small for the pixels to scale correctly.
-        Also, hardcoded values on @media-query breakpoints is somewhat
-        antipattern now! */
-    /*  Read web designing for the Apple Watch at: https://bubblin.io/blog/web-design-recommendations-for-the-apple-watch */
-    /*  Read more at https://bubblin.io/blog/toucaan-introduction */
+    /*  Style for smartwatches or a very tiny mobile screen go here. */
   }
 }
 
@@ -63,11 +52,20 @@ like a champion!
   }
 }
 
-/* and so on…*/
+/* 	and so on… */
+
+/*	Scale your UX/UI along portrait orientation from the tiniest viewport
+		on the planet to the largest screen there is mounted vertically.
+
+		Follow the same rules to scale your UI orthogonally along landscape
+		orientation from the tiniest screens to the largest projectors and TVs. */
+
+
 
 ```
 
-### 2. Using `--inch` with Tailwind, Bootstrap, Bulma:
+### 2. Using `--inch` with Bootstrap, Bulma, Tailwind or other responsive CSS frameworks:
+
 
 
 ### 3. Using `--inch` with generic CSS:
