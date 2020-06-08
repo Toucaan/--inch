@@ -40,7 +40,7 @@ like a champion!
 
 ```css
 /* Portrait CSS */
-@media only screen and (max-width: 2in) {
+@media only screen and (max-width: calc(2 * var(--inch)) {
   body{
     /*  All the style for a smartwatch or a very tiny mobile screen
         go in here. We don't use pixels for an Apple Watch because
@@ -52,13 +52,13 @@ like a champion!
   }
 }
 
-@media only screen and (min-width: 2.000000000001in) and (max-width: 4in) {
+@media only screen and (min-width: calc(2.000000000001 * var(--inch)) and (max-width: calc(4 * var(--inch))) {
   body{
     /* Smartphones and phablets in portrait mode.*/
   }
 }
 
-@media only screen and (min-width: 4.000000000001in) and (max-width: 8in) {
+@media only screen and (min-width: calc(4.000000000001 * var(--inch))) and (max-width: calc(8 * var(--inch))) {
   body{
     /* Tablets and larger menu surfaces in portrait mode.*/
   }
