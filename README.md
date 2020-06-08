@@ -61,11 +61,28 @@ on the planet (Apple Watch) to the largest screen (mounted vertically) there is.
 Apply the same rules to scale the UI orthogonally along landscape
 orientation from the tiniest screen to the largest TVs and projectors on the web.
 
-Read more about Intrinsic Web Design and Baseline RResets on Toucaan [documentation](https://www.toucaan.com/docs/introduction).
+Read more about Intrinsic Web Design and a new baseline reset on Toucaan's [documentation](https://www.toucaan.com/docs/introduction).
 
 ### 2. Using `--inch` with Bootstrap, Bulma, Tailwind:
 
+Nearly all the older CSS frameworks use a heavyhanded and (largely) dated [normalize.css](https://github.com/necolas/normalize.css/)
+that was created by Necolas Gallagher. These tools of CSS do not emphasize on the
+the orthogonality of web design in 'portrait' or 'landscape' modes, and thus stop
+at a "mobile first" responsive approach.
+
+The `--inch` polyfill is aimed at web designs that "belong to" the
+device, ala intrinsic web design. Its aim is to cover the [new landscape of the web](https://bubblin.io/blog/the-new-landscape-of-the-web)
+instead of being just mobile-first.
+
+My recommendations is to not use `--inch` polyfill with older CSS frameworks, but
+if you must, the following line on the `<head></head>` before any framework shall suffice.
+
+> <link rel="stylesheet" href="path/to/css/--inch.css">
+
 ### 3. Using `--inch` with generic CSS:
+
+`--inch` is also ideal if you are not using any style framework and are wanting to work
+your designs up from the ground using vanilla css.
 
 ### References
 

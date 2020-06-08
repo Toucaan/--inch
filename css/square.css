@@ -16,16 +16,7 @@ body {
     color: white;
 }
 
-.flex {
-    display: -webkit-box;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
 /* Web standards have an inch unit, but not really.  */
-
 .standards {
     width: 1in;
     height: 1in;
@@ -33,6 +24,7 @@ body {
     margin: auto 1vmin;
 }
 
+/* Paint an square inch using our polyfill.*/
 .square {
     width: var(--inch);
     height: var(--inch);

@@ -11,7 +11,11 @@
     https://caniuse.com/#search=device-width
 
     There are probably other ways of achieving the above result using min()/max()
-    properties but those would be empirical in nature. */
+		properties but those would be empirical in nature. */
+
+/*********************/
+/**		CatchAll()	 	**/
+/*********************/
 
 /* 	The mappings have been categorized into five zones: */
 
@@ -100,17 +104,35 @@
 /* SMARTWATCH ZONE */
 /*******************/
 
-/* ----------- Apple Watch 5 (Women) ----------- */
-@media only screen and (max-device-width: 42mm) and (-webkit-min-device-pixel-ratio: 3) {
+/* Apple Watch 5 (Women) 40mm. */
+@media only screen and (min-device-width: 324px) and (min-device-height: 394px) and (-webkit-device-pixel-ratio: 3) {
   :root {
-    --inch: 158px;
+    --inch: 370px;
   }
   .square {
-    background-color: pink;
+    background-color: coral;
   }
 }
 
+/* Apple Watch 5 (Men) 44mm. */
+@media only screen and (min-device-width: 368px) and (min-device-height: 448px) and (-webkit-device-pixel-ratio: 3) {
+  :root {
+		--inch: 370px;
+  }
+  .square {
+    background-color: greenyellow;
+  }
+}
+
+/* Moto 360 Watch */
+@media (device-width: 218px) and (device-height: 281px) and (-webkit-device-pixel-ratio: 2) {
+  :root {
+    --inch: 227px;
+  }
+}
 
 /*********************/
 /* PROJECTOR/TV ZONE */
 /*********************/
+
+
