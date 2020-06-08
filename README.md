@@ -2,8 +2,8 @@
 
 A global `--inch` polyfill using CSS variables.
 
-This file includes pin-pointed pixels:`--inch` mappings for commonly available hardware
-according to their resolutionary `dpi` and `device-size`. Full discussion about the purpose and reasoning behind this polyfill is available here:
+This polyfill includes pin-pointed `pixels`:`--inch` mappings for commonly available hardware
+according to their resolutionary `dpi` (default or "best" resolution) and `device-size`. Full discussion about the purpose and reasoning behind this polyfill is available here:
 
 [https://bubblin.io/blog/inch](https://bubblin.io/blog/inch)
 
@@ -31,7 +31,7 @@ at the top of your critical css like so:
 Now you can use `--inch` on your stylesheet along the `portrait` or `landscape` axis
 like a champion!
 
-Read more about scaling UI and baseline resets on Toucaan's [documentation](https://www.toucaan.com/docs/introduction).*/
+Read more about scaling UI and baseline resets on Toucaan [documentation](https://www.toucaan.com/docs/introduction).
 
 
 ```css
