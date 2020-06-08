@@ -65,24 +65,30 @@ Read more about Intrinsic Web Design and a new baseline reset on Toucaan's [docu
 
 ### 2. Using `--inch` with Bootstrap, Bulma, Tailwind:
 
-Nearly all the older CSS frameworks use a heavyhanded and (largely) dated [normalize.css](https://github.com/necolas/normalize.css/)
-that was created by Necolas Gallagher. These tools of CSS do not emphasize on the
-the orthogonality of web design in 'portrait' or 'landscape' modes, and thus stop
-at a "mobile first" responsive approach.
+Nearly all the older CSS frameworks use a heavy and (mostly) dated [normalize.css](https://github.com/necolas/normalize.css/)
+that was created eons ago. For this reason these frameworks are not able to isolate web
+designs according to the orthogonality of web-ala, 'portrait' or 'landscape' orientations.
 
-The `--inch` polyfill is aimed at web designs that "belong to" the
-device, ala intrinsic web design. Its aim is to cover the [new landscape of the web](https://bubblin.io/blog/the-new-landscape-of-the-web)
+If you are using any of the usual suspects, your design strategy will be limited to "mobile first" responsiveness.
+
+The `--inch` polyfill, however, is aimed at web designing that "belongs to" the
+device it renders on, meaning, intrinsic web design. The aim of this polyfill is to
+cover the [new landscape of the web](https://bubblin.io/blog/the-new-landscape-of-the-web)
 instead of being just mobile-first.
 
-My recommendations is to not use `--inch` polyfill with older CSS frameworks, but
-if you must, the following line on the `<head></head>` before any framework shall suffice.
+The general recommendation here is to NOT use thee `--inch` polyfill with any of the older CSS
+frameworks, but if you must or wish to experiment a bit, then the following line on
+the `<head></head>` before any framework is included shall suffice:
 
 > <link rel="stylesheet" href="path/to/css/--inch.css">
 
 ### 3. Using `--inch` with generic CSS:
 
-`--inch` is also ideal if you are not using any style framework and are wanting to work
-your designs up from the ground using vanilla css.
+The `--inch` polyfill is also ideal if you are not using any style framework at all and want to
+support and scale along new devices like the Apple Watch or a hi-res OLED TV.
+Works great if you're willing to build your designs ground up using vanilla css.
+
+> <link rel="stylesheet" href="path/to/css/--inch.css">
 
 ### References
 
@@ -95,6 +101,3 @@ your designs up from the ground using vanilla css.
 4. https://www.w3.org/Style/Examples/007/units.en.html
 
 5. https://bubblin.io/blog/web-design-recommendations-for-the-apple-watch
-
-
-
