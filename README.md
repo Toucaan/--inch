@@ -3,7 +3,8 @@
 A global `--inch` polyfill using CSS variables.
 
 This polyfill includes pin-pointed `pixels`:`--inch` mappings for commonly available hardware
-according to their resolutionary `dpi` (default or "best" resolution) and `device-size`. Full discussion about the purpose and reasoning behind this polyfill is available here:
+according to their resolutionary `dpi` (default or "best" resolution) and `device-size`.
+Full discussion about the reasoning behind this polyfill is available here:
 
 [https://bubblin.io/blog/inch](https://bubblin.io/blog/inch)
 
