@@ -11,12 +11,26 @@ PRs are super welcome. Please follow the rules specified below to submit new map
 The first square with className `square` will appear in shape of a square _only_ if the mapping for your machine is accurate. This square is supposed to measure 1 inch physically.
 
 ```
+/* 13.3-inch MBP, 2012, (1280 x 800px) */
 @media (resolution: 96dpi) and (device-width: 1280px) {
   :root {
     --inch: 116px;
   }
 }
-
 ```
 
-The second square has specified dimensions of `1in` but since the `in` is wrong, it will show what % of error there is on on a given system. Machines with higher dpi or up/downscaling will show more difference between a real inch and the css inch. 
+The second square has a specified dimension of `1in` but since the `in` unit is wrong, it will show the quantum of error there is on a given machine. Machines with higher dpi or up/downscaling will show more difference between a real inch and the css inch, for example.
+
+### Steps: 
+
+```
+$ git clone https://github.com/bookiza/--inch.git && cd --inch
+
+$ npm install
+
+$ npm run start
+```
+
+The page will load at `localhost:3000` with just the two squares or one depending on the machine.
+
+
