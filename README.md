@@ -65,11 +65,9 @@ Read more about Intrinsic Web Design and a new baseline reset on Toucaan's [docu
 
 ### 2. Using `--inch` with Bootstrap, Bulma, Tailwind:
 
-Nearly all the major CSS frameworks use a heavy reset or [normalize.css](https://github.com/necolas/normalize.css/) under the hood. For this reason those frameworks are limited to hardcoded responsiveness.
+Nearly all the major CSS frameworks use a heavy reset or [normalize.css](https://github.com/necolas/normalize.css/) under the hood. For this reason those frameworks are limited to hardcoded responsiveness in `pixels` or `em` unit.
 
-The `--inch` polyfill, however, is aimed at intrinsic web design. A design pattern that "belongs to" the device it renders on. So my general recommendation is to NOT use the `--inch`
-variable with any of the traditional frameworks, but if you must, then the following line on
-the `<head></head>` should suffice:
+Since the `--inch` polyfill is aimed at intrinsic web design using physical units, I am not sure how it would behave with the traditional frameworks. So my general recommendation is to avoid using the `--inch` variable with older frameworks, but if try you must, then the following line on the `<head></head>` should suffice:
 
 > <link rel="stylesheet" href="path/to/css/--inch.css">
 
