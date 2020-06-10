@@ -69,7 +69,9 @@ Nearly all the major CSS frameworks use a heavy reset or [normalize.css](https:/
 
 Since the `--inch` polyfill is aimed at intrinsic web design using physical units, I am not sure how it would behave with the traditional frameworks. So my general recommendation is to avoid using the `--inch` variable with older frameworks, but if try you must, then the following line on the `<head></head>` should suffice:
 
-> <link rel="stylesheet" href="path/to/css/--inch.css">
+```html
+<link rel="stylesheet" href="path/to/css/--inch.css">
+```
 
 Please note that pixels scale differently whereas  `--inch` is tied to the physical size of the screen you are on.
 
