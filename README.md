@@ -65,22 +65,15 @@ Read more about Intrinsic Web Design and a new baseline reset on Toucaan's [docu
 
 ### 2. Using `--inch` with Bootstrap, Bulma, Tailwind:
 
-Nearly all the older CSS frameworks use a heavy and (mostly) dated [normalize.css](https://github.com/necolas/normalize.css/)
-that was created eons ago. For this reason these frameworks are not able to isolate web
-designs according to the orthogonality of web-ala, 'portrait' or 'landscape' orientations.
+Nearly all the major CSS frameworks use a heavy reset or [normalize.css](https://github.com/necolas/normalize.css/) under the hood. For this reason those frameworks are limited to hardcoded responsiveness.
 
-If you are using any of the usual suspects, your design strategy will be limited to "mobile first" responsiveness.
-
-The `--inch` polyfill, however, is aimed at web designing that "belongs to" the
-device it renders on, meaning, intrinsic web design. The aim of this polyfill is to
-cover the [new landscape of the web](https://bubblin.io/blog/the-new-landscape-of-the-web)
-instead of being just mobile-first.
-
-The general recommendation here is to NOT use thee `--inch` polyfill with any of the older CSS
-frameworks, but if you must or wish to experiment a bit, then the following line on
-the `<head></head>` before any framework is included shall suffice:
+The `--inch` polyfill, however, is aimed at intrinsic web design. A design pattern that "belongs to" the device it renders on. So my general recommendation is to NOT use the `--inch`
+variable with any of the traditional frameworks, but if you must, then the following line on
+the `<head></head>` should suffice:
 
 > <link rel="stylesheet" href="path/to/css/--inch.css">
+
+Please note that pixels scale differently whereas  `--inch` is tied to the physical size of the screen you are on.
 
 ### 3. Using `--inch` with generic CSS:
 
