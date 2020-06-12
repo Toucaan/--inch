@@ -118,18 +118,12 @@
   :root {
     --inch: 370px;
   }
-  .square {
-    background-color: coral;
-  }
 }
 
 /* Apple Watch 5 (Men) 44mm. */
 @media  (device-width: 368px) and (min-device-height: 448px) and (-webkit-device-pixel-ratio: 3) {
   :root {
 		--inch: 370px;
-  }
-  .square {
-    background-color: greenyellow;
   }
 }
 
