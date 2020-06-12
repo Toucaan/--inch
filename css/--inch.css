@@ -22,42 +22,42 @@
 /****************/
 
 /* 13.3-inch MBP (2012) (1280 x 800) */
-@media (resolution: 96dpi) and (device-width: 1280px) {
+@media (resolution: 96dpi) and (device-width: 1280px), (-webkit-device-pixel-ratio: 1) and (device-width: 1280px) {
   :root {
     --inch: 116px;
   }
 }
 
 /* 17" Retina MBP/Chrome values */
-@media (resolution: 192dpi) and (device-width: 1680px) {
+@media (resolution: 192dpi) and (device-width: 1680px), (-webkit-device-pixel-ratio: 2) and (device-width: 1680px) {
   :root {
     --inch: 130px;
   }
 }
 
 /* Windows 10 @100% (1366 x 768) landscape*/
-@media (resolution: 96dpi) and (device-width: 1366px) {
+@media (resolution: 96dpi) and (device-width: 1366px), (-webkit-device-pixel-ratio: 1) and (device-width: 1366px) {
   :root {
     --inch: 114px;
   }
 }
 
 /* Windows 10 Pro @100% (1920 x 1080px) landscape. */
-@media (resolution: 96dpi) and (device-width: 1920px) {
+@media (resolution: 96dpi) and (device-width: 1920px), (-webkit-device-pixel-ratio: 1) and (device-width: 1920px) {
   :root {
     --inch: 144px;
   }
 }
 
 /* Windows 10 Pro @125% (1920 x 1080px) landscape. */
-@media (resolution: 120dpi) and (device-width: 1536px) {
+@media (resolution: 120dpi) and (device-width: 1536px), (-webkit-device-pixel-ratio: 1) and (device-width: 1536px) {
   :root {
     --inch: 115px;
   }
 }
 
 /* 27" EIZO monitor (2560 x 1440)*/
-@media (resolution: 115dpi) and (device-width: 2560px) {
+@media (resolution: 115dpi) and (device-width: 2560px), (-webkit-device-pixel-ratio: 1) and (device-width: 2560px) {
   :root {
     --inch: 92px;
   }
@@ -68,7 +68,6 @@
 /****************/
 
 /* iPhone 11 Pro Max */
-
 @media (device-width: 414px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
   :root {
     --inch: 370px;
@@ -140,5 +139,3 @@
 /*********************/
 /**		CatchAll()	 	**/
 /*********************/
-
-
