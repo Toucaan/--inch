@@ -142,6 +142,15 @@
 
 
 
-/*********************/
-/**		An average 	 	**/
-/*********************/
+/*********************************************************/
+/**		Metric System & Imperial Units of Measurement 	 	**/
+/*********************************************************/
+
+:root {
+  /* Do not --inch variable here. Doing so will break the cascade. */
+  --centimeters: calc(2.54 * var(--inch));
+  --millimeters: calc(25.4 * var(--inch));
+  --meters: calc(2.54 * var(--inch) / 100);
+  --feet: calc(12 * var(--inch));
+  --thou: calc(var(--inch) / 1000);
+}

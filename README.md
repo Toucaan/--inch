@@ -29,7 +29,7 @@ at the top of your critical css like so:
   }
 ```
 
-Now you can use the `--inch` variable on your stylesheets along the `portrait` or `landscape` axis
+Now you can use the `--inch` variable on your stylesheets along the `portrait` or `landscape` axis,
 like so:
 
 ```css
@@ -56,8 +56,23 @@ like so:
 
 ```
 
-Scale your UX/UI along the _portrait_ orientation from the tiniest viewport
-on the planet (Apple Watch) to the largest screen (mounted vertically) there is.
+Extras:
+
+The other absolute units that are available inside the global `:root` of your webpage:
+
+```css
+:root {
+  --centimeters: calc(2.54 * var(--inch));
+  --millimeters: calc(25.4 * var(--inch));
+  --meters: calc(2.54 * var(--inch) / 100);
+  --feet: calc(12 * var(--inch));
+  --thou: calc(var(--inch) / 1000); /* …because why not!? */
+}
+
+```
+
+Scale your UX/UI from the tiniest viewport
+on the planet (the Apple Watch) to the largest screen that there is along orientation.
 Apply the same rules to scale the UI orthogonally along landscape
 orientation from the tiniest screen to the largest TVs and projectors on the web.
 
