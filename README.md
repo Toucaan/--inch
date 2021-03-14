@@ -29,7 +29,7 @@ at the top of your critical css like so:
   }
 ```
 
-Now you can use the `--inch` variable on your stylesheets along the `portrait` or `landscape` axis,
+Pending support for var() and calc() in media-queries, you can now use the `--inch` variable on your stylesheets along the `portrait` or `landscape` axis,
 like so:
 
 ```css
