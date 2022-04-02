@@ -81,8 +81,8 @@ Nearly all the well-known CSS frameworks are responsive in nature and utilize wh
 
 My general recommendation is to avoid using the `--inch` polyfill with older CSS frameworks.
 
-##### I want to try with Tailwind!
-If try you must, then the following line on the `<head></head>` would suffice:
+#### …but I want to try with Tailwind!
+Sure. If try you must, then the following line on the `<head></head>` would suffice:
 
 ```html
 <link rel="stylesheet" href="path/to/css/--inch.css">
