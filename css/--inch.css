@@ -26,8 +26,8 @@
   }
 }
 
-/* 17" Retina MBP/Chrome values */
-@media (resolution: 192dpi) and (device-width: 1680px), (-webkit-device-pixel-ratio: 2) and (device-width: 1680px) {
+/* 17" Retina MBP/Chrome values & MacBook Pro (16-inch, 2021) */
+@media (resolution: 192dpi) and (device-width: 1680px), (-webkit-device-pixel-ratio: 2) and (device-width: 1680px), (resolution: 192dpi) and (device-width: 1728px) {
   :root {
     --inch: 130px;
   }
