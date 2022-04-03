@@ -1,6 +1,6 @@
 # --inch
 
-A global `--inch` polyfill for accurate _digital physical standard and imperial_ units on CSS. This polyfill includes exact `pixels`:`--inch` pairings (or mappings) for the commonly available consumer hardware.
+A global `--inch` polyfill for accurate implementation of  physical units of measurement (standard or imperial) on digital mediums using CSS custom properties. This polyfill includes exact `pixels`:`--inch` pairings (or mappings) for the commonly available consumer hardware.
 
 Each pairing maps the device resolution `dpi` (or the _default_ or the 'best' resolution) to the actual size of an inch measured physically.
 

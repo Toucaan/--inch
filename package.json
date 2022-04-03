@@ -11,6 +11,6 @@
     "author": "Marvin Danig <marvin@marvindanig.com> (http://marvindanig.com)",
     "license": "MIT",
     "dependencies": {
-        "browser-sync": "^2.26.7"
+        "browser-sync": "^2.27.9"
     }
 }
