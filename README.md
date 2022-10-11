@@ -1,22 +1,17 @@
 # --inch
+A global `--inch` poly-fill for accurate implementation of standard or imperial physical units of measurement using css custom properties. This poly-fill includes a list of exact `pixels`:`--inch` pairings (or mappings) for the _commonly_ available consumer hardware.
 
-A global `--inch` polyfill for accurate implementation of  physical units of measurement (standard or imperial) on digital mediums using CSS custom properties. This polyfill includes exact `pixels`:`--inch` pairings (or mappings) for the commonly available consumer hardware.
-
-Each pairing maps the device resolution `dpi` (or the _default_ or the 'best' resolution) to the actual size of an inch measured physically.
-
-Full article on the reasoning behind this polyfill is [printed](https://bubblin.io/blog/inch) on the official blog.
-
-> Please note that the `--inch` variable on the polyfill is different from the standard CSS inch used in the print industry that is usually hardcoded at `1in: 96px`.
+### Pairing?
+A pairing maps the device resolution `dpi` to the actual size of an inch that has been measured physically using a scale. A detailed article on how this works is [printed](https://bubblin.io/blog/inch) on the Bubblin blog.
 
 
 ## Usage
 
-### 1. Using `--inch` with Toucaan CSS Framework
-
-If you are using the [Toucaan Mutative framework](https://toucaan.com), add `--inch.css` polyfill at the top of your critical css like so:
+### 1. Using `--inch` with Toucaan 
+If you are using [Toucaan](https://toucaan.com), you can simply add the `--inch.css` poly-fill as part of the utility variables adopted in the critical css region of your webpage. Alternatively, `--inch` can also be directly imported into the `env` source of the framework by simply copying the poly-fill files into the appropriate folder.
 
 ```css
-  /* Include `--inch` variable into the :root of the document using polyfill. */
+  /* Import the `--inch` variable. */
   @import url('path/to/--inch.css') only screen;
 
   /* Portrait ⇋ landscape switch. */
@@ -29,7 +24,37 @@ If you are using the [Toucaan Mutative framework](https://toucaan.com), add `--i
   }
 ```
 
-Assuming that support for var() and calc() functions will eventually land in media queries, you can then use the `--inch` variable on your stylesheet along the `portrait` or `landscape` axis of the [intrinsic web design](https://bubblin.io/blog/a-css-router), like so:
+#### Additional Units
+
+The following absolute units can also be used with the `inch` variable:
+
+```css
+:root {
+  /* Import the `--inch` variable. */
+  @import url('path/to/--inch.css') only screen;
+
+  --centimeters: calc(2.54 * var(--inch));
+  --millimeters: calc(25.4 * var(--inch));
+  --meters: calc(2.54 * var(--inch) / 100);
+  --feet: calc(12 * var(--inch));
+  --thou: calc(var(--inch) / 1000); /* …because why not!? */
+}
+```
+
+### 2. Using the `--inch` unit with Bootstrap, Bulma, or Tailwind:
+
+It might work, but my general recommendation is to avoid using the `--inch` poly-fill with any of the responsive css frameworks. Mainly because:
+
+1. The poly-fill is experimental in nature.
+2. Responsive design is rooted in the use of standard design units like `px`, `em` etc.
+
+### 3. Using the `--inch` variable with plain css:
+The `--inch` poly-fill is great for apps that do not use any css framework. It works great with vanilla css!
+
+### NOT FOR PRODUCTION USE
+Although this poly-fill has a certain level of support for common consumer devices already, it certainly is NOT SUITABLE FOR PRODUCTION USE at all. At least not yet.
+
+Assuming support, you will be able to use the `--inch` on your styles, like so:
 
 ```css
 /* Portrait CSS */
@@ -55,47 +80,9 @@ Assuming that support for var() and calc() functions will eventually land in med
 
 ```
 
-### Contribute
+### Contribution
 
-Head over [here](https://github.com/Toucaan/--inch/blob/master/CONTRIBUTING.md). 🙏🏻
-
-### Extras
-
-The following additional absolute units are also available within the global `:root` of your webpage/application:
-
-```css
-:root {
-  --centimeters: calc(2.54 * var(--inch));
-  --millimeters: calc(25.4 * var(--inch));
-  --meters: calc(2.54 * var(--inch) / 100);
-  --feet: calc(12 * var(--inch));
-  --thou: calc(var(--inch) / 1000); /* …because why not!? */
-}
-```
-
-Great! Scale your UI from the tiniest viewport of the Apple Watch to the giant screen of a projector using physical inches. Read more about Intrinsic Web Design and a [new baseline reset](https://bubblin.io/blog/baseline-css) on [Toucaan](https://www.toucaan.com/docs/introduction).
-
-### 2. Using `--inch` with Bootstrap, Bulma, or Tailwind:
-
-Nearly all the well-known CSS frameworks are responsive in nature and utilize what is called a `reset.css` or [normalize](https://github.com/necolas/normalize.css/) under the hood. Since the `--inch` polyfill is riveted for _intrinsic web design_ using physical units, it is unlikely to function as expected with those older frameworks. 
-
-My general recommendation is to avoid using the `--inch` polyfill with older CSS frameworks.
-
-#### …but I want to try with Tailwind!
-Sure. If try you must, then the following line on the `<head></head>` would suffice:
-
-```html
-<link rel="stylesheet" href="path/to/css/--inch.css">
-```
-
-Do share your results with us on [GitHub](https://github.com/Toucaan/--inch/discussions)
-
-
-### 3. Using `--inch` with generic CSS:
-
-The `--inch` polyfill is also ideal if you are not using any css framework on your app. Works great with vanilla css!
-
-> @import url('path/to/--inch.css') only screen;
+Contributions of new mappings are always welcome. Head over [here](https://github.com/Toucaan/--inch/blob/master/CONTRIBUTING.md) to learn how. 🙏🏻
 
 ### References
 
@@ -108,3 +95,5 @@ The `--inch` polyfill is also ideal if you are not using any css framework on yo
 4. https://www.w3.org/Style/Examples/007/units.en.html
 
 5. https://bubblin.io/blog/web-design-recommendations-for-the-apple-watch
+
+Do share your thoughts on [GitHub](https://github.com/Toucaan/--inch/discussions)
