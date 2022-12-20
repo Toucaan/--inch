@@ -143,43 +143,43 @@
 /****************/
 
 /* iPad (1-6), iPad 2, iPad Mini (1-5), iPad Mini 2, iPad Mini 3, iPad Mini 4, iPad Air 2, iPad Pro 9.7" */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-device-pixel-ratio: 2) {
+@media only screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) {
     :root {
         --inch: 163px;
     }
 }
 /* iPad (7-9) */
-@media only screen and (min-device-width: 810px) and (max-device-width: 1080px) and (-webkit-device-pixel-ratio: 2) {
+@media only screen and (device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) {
     :root {
         --inch: 133px;
     }
 }
 /* iPad Air (3-4), iPad Pro 10.5 */
-@media screen and (device-width: 834px) and (device-width: 1112px) and (-webkit-device-pixel-ratio:  2) {
+@media screen and (device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio:  2) {
   :root {
     --inch: 132px;
   }
 }
 /* iPad (10th), iPad Air (5th) */
-@media screen and (device-width: 820px) and (device-width: 1180px) and (-webkit-device-pixel-ratio:  2) {
+@media screen and (device-width: 820px) and (device-height: 1180px) and (-webkit-device-pixel-ratio:  2) {
   :root {
     --inch: 132px;
   }
 }
 /* iPad Pro 11" (1-6) */
-@media screen and (device-width: 834px) and (device-width: 1194px) and (-webkit-device-pixel-ratio:  2) {
+@media screen and (device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio:  2) {
   :root {
     --inch: 132px;
   }
 }
 /* iPad Pro 12.9" (1-6) */
-@media only screen and (device-width: 1024px) and (device-width: 1366px) and (-webkit-device-pixel-ratio: 2) {
+@media only screen and (device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) {
     :root {
         --inch: 132px;
     }
 }
 /* iPad Mini (6th) */
-@media only screen and (device-width: 744px) and (device-width: 1133px) and (-webkit-device-pixel-ratio: 2) {
+@media only screen and (device-width: 744px) and (device-height: 1133px) and (-webkit-device-pixel-ratio: 2) {
     :root {
         --inch: 163px;
     }
