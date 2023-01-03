@@ -66,47 +66,123 @@
 /****************/
 
 /* iPhone 11 Pro Max */
-@media (device-width: 414px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
-  :root {
-    --inch: 370px;
-  }
-}
-
-@media (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
-  :root {
-    --inch: 189px;
-  }
-}
-
+/* see below */
 /* iPhone 6 */
-@media (device-width: 375px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
+/* see below */
+/* iPhone 4 and 4S */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+    :root {
+        --inch: 163px;
+    }
+}
+/* iPhone 5, 5S, 5C and 5SE, SE (1st) */
+/* resolution: 2dppx; - css resolution: 2dppx; = logical - not supported in safari/macos */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+    :root {
+        --inch: 163px;
+        } #app { background-color: blue;
+    }
+}
+/* iPhone 6, 6s, 7, 8, SE (2nd and 3rd) */
+@media screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2){
   :root {
-    --inch: 430px;
+    --inch: 163px;
   }
 }
-
-@media (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape) {
+/* iPhone 6 Plus, 7 Plus, 8 Plus */
+@media only screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) {
+    :root {
+        --inch: 163px;
+    }
+}
+/* iPhone 11, iPhone Xr */
+@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) {
+    :root {
+        --inch: 163px;
+    }
+}
+/* iPhone 11 Pro Max, iPhone Xs Max */
+@media screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio:  3) {
   :root {
-    --inch: 242px;
+    --inch: 152.67px;
   }
 }
-
+/* iPhone 12, iPhone 12 Pro, iPhone 13, iPhone 13 Pro, iPhone 14 */
+@media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
+    :root {
+        --inch: 153.33px;
+    }
+}
+/* iPhone 12 Pro Max, iPhone 13 Pro Max, iPhone 14 Plus */
+@media only screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) {
+    :root {
+        --inch: 152.67px;
+    }
+}
+/* iPhone 14 Pro */
+@media only screen and (device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) {
+    :root {
+        --inch: 153.33px;
+    }
+}
+/* iPhone 14 Pro Max */
+@media only screen and (device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) {
+    :root {
+        --inch: 153.33px;
+    }
+}
+/* iPhone 12 mini, iPhone 13 Mini, iPhone X, Xs */
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+    :root {
+        --inch: 165.2px;
+    }
+}
 
 /****************/
 /* TABLET ZONE  */
 /****************/
 
-/* ----------- iPad Pro 10.5 ----------- */
-@media  (device-width: 834px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
+/* iPad (1-6), iPad 2, iPad Mini (1-5), iPad Mini 2, iPad Mini 3, iPad Mini 4, iPad Air 2, iPad Pro 9.7" */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-device-pixel-ratio: 2) {
+    :root {
+        --inch: 163px;
+    }
+}
+/* iPad (7-9) */
+@media only screen and (min-device-width: 810px) and (max-device-width: 1080px) and (-webkit-device-pixel-ratio: 2) {
+    :root {
+        --inch: 133px;
+    }
+}
+/* iPad Air (3-4), iPad Pro 10.5 */
+@media screen and (device-width: 834px) and (device-width: 1112px) and (-webkit-device-pixel-ratio:  2) {
   :root {
-    --inch: 158px;
+    --inch: 132px;
   }
 }
-
-@media (device-width: 834px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape) {
+/* iPad (10th), iPad Air (5th) */
+@media screen and (device-width: 820px) and (device-width: 1180px) and (-webkit-device-pixel-ratio:  2) {
   :root {
-    --inch: 118px;
+    --inch: 132px;
   }
+}
+/* iPad Pro 11" (1-6) */
+@media screen and (device-width: 834px) and (device-width: 1194px) and (-webkit-device-pixel-ratio:  2) {
+  :root {
+    --inch: 132px;
+  }
+}
+/* iPad Pro 12.9" (1-6) */
+@media only screen and (device-width: 1024px) and (device-width: 1366px) and (-webkit-device-pixel-ratio: 2) {
+    :root {
+        --inch: 132px;
+    }
+}
+/* iPad Mini (6th) */
+@media only screen and (device-width: 744px) and (device-width: 1133px) and (-webkit-device-pixel-ratio: 2) {
+    :root {
+        --inch: 163px;
+    }
 }
 
 /*******************/
@@ -148,9 +224,9 @@
 
 :root {
   /* Do not --inch variable here. Doing so will break the cascade. */
-  --centimeters: calc(2.54 * var(--inch));
-  --millimeters: calc(25.4 * var(--inch));
-  --meters: calc(2.54 * var(--inch) / 100);
+  --centimeters: calc(1 / 2.54 * var(--inch));
+  --millimeters: calc(1 / 0.254 * var(--inch));
+  --meters: calc(1 / 2.54 * var(--inch) * 100);
   --feet: calc(12 * var(--inch));
   --thou: calc(var(--inch) / 1000);
 }
