@@ -1,5 +1,5 @@
 # --inch
-A `:root{}` level `--inch` poly-fill for accurate implementation of the Standard ([SI System](https://en.wikipedia.org/wiki/International_System_of_Units)) and the Imperial Units of Physical Measurement using Custom CSS Properties. This poly-fill includes a list of exact `pixels`:`--inch` pairings (or mappings) for the _commonly_ available consumer hardware.
+A `:root{}` level `--inch` poly-fill for accurate implementation of the Standard ([SI System](https://en.wikipedia.org/wiki/International_System_of_Units)) and the Imperial Units of Physical Measurement using [CSS Custom Properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Variables). This poly-fill includes a list of exact `pixels`:`--inch` pairings (or mappings) for the _commonly_ available consumer hardware.
 
 PRs are welcome.
 
