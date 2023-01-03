@@ -1,5 +1,7 @@
 # --inch
-A global `--inch` poly-fill for accurate implementation of standard or imperial physical units of measurement using css custom properties. This poly-fill includes a list of exact `pixels`:`--inch` pairings (or mappings) for the _commonly_ available consumer hardware.
+A `:root{}` level `--inch` poly-fill for accurate implementation of the Standard ([SI System](https://en.wikipedia.org/wiki/International_System_of_Units)) and the Imperial Units of Physical Measurement using Custom CSS Properties. This poly-fill includes a list of exact `pixels`:`--inch` pairings (or mappings) for the _commonly_ available consumer hardware.
+
+PRs are welcome.
 
 ### Pairing?
 A pairing maps the device resolution `dpi` to the actual size of an inch that has been measured physically using a scale. A detailed article on how this works is [printed](https://bubblin.io/blog/inch) on the Bubblin blog.
